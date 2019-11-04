@@ -3,7 +3,6 @@
     header("Content-type:text/html;charset=utf-8");
     $page = 'index';
     $html = '发现音乐网页内容';
-
     if(array_key_exists('page',$_GET)){
         $page = $_GET['page'];
     }
