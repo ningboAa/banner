@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+1.自定义属性 data-*自定义属性
+2.获取元素的自定义属性 jqery获取方式 $("div").data("自定义属性的名称")
+3.自定义的属性的名称是什么？data-user==>user data-user-name==>userName
+4.命名的规则 遵循驼峰命名法
+5.获取元素的自定义属性 H5的方式 dataset 自定义属性的集合
+
+-->
+<div data-user="wl" data-user-age="18"></div>
+
+<script>
+    var  div =document.querySelector("div");
+
+    /*获取所有 $("div").data()*/
+    var  set = div.dataset;
+    /*
+    获取单个自定义属性 $("div").data("user")
+    var user=set.user;
+    var user = set["user"]；
+    */
+    set.user="gg";
+    /*jquery的data（）做做的内存*/
+    /*H5的dataset*/
+</script>
+
+</body>
+</html>
